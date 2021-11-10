@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build common-lib --prod",
+    "build": "ng build CommonLib --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
