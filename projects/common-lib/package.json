@@ -1,6 +1,6 @@
 {
-  "name": "@gomez-net7/worflow-angular/common",
-  "version": "0.0.4",
+  "name": "@gomez-net7/workflow-angular/common",
+  "version": "0.0.5",
   "peerDependencies": {
     "@angular/common": "^9.1.13",
     "@angular/core": "^9.1.13"
