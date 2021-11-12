@@ -42,6 +42,46 @@
           }
         }
       }
+    },
+    "Muruca": {
+      "projectType": "library",
+      "root": "projects/muruca",
+      "sourceRoot": "projects/muruca/src",
+      "prefix": "muruca",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/muruca/tsconfig.lib.json",
+            "project": "projects/muruca/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/muruca/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/muruca/src/test.ts",
+            "tsConfig": "projects/muruca/tsconfig.spec.json",
+            "karmaConfig": "projects/muruca/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/muruca/tsconfig.lib.json",
+              "projects/muruca/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "CommonLib"
 }
