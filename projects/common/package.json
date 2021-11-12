@@ -1,6 +1,6 @@
 {
   "name": "@gomez-net7/workflow-angular-common",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "peerDependencies": {
     "@angular/common": "^9.1.13",
     "@angular/core": "^9.1.13"
@@ -8,9 +8,5 @@
   "dependencies": {
     "tslib": "^1.10.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/gomez-net7/worflow-angular.git",
-    "directory": "projects/common"
-  }
+  "repository": "https://github.com/gomez-net7/workflow-angular"
 }
