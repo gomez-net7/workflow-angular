@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'common-CommonLib',
+  selector: 'common-Common',
   template: `
     <p>
-      common-lib works!
+      common works!
     </p>
   `,
   styles: [
   ]
 })
-export class CommonLibComponent implements OnInit {
+export class CommonComponent implements OnInit {
 
   constructor() { }
 

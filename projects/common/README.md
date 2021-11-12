@@ -13,7 +13,7 @@ Run `ng build CommonLib` to build the project. The build artifacts will be store
 
 ## Publishing
 
-After building your library with `ng build CommonLib`, go to the dist folder `cd dist/common-lib` and run `npm publish`.
+After building your library with `ng build CommonLib`, go to the dist folder `cd dist/common` and run `npm publish`.
 
 ## Running unit tests
 

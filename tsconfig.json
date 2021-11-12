@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "common-lib": [
-        "dist/common-lib/common-lib",
-        "dist/common-lib"
+      "common": [
+        "dist/common/common",
+        "dist/common"
       ]
     }
   },
