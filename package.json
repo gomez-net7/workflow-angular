@@ -1,12 +1,10 @@
 {
   "name": "workflow-angular",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run build:common && npm run build:muruca",
-    "build:common": "ng build Common --prod",
-    "build:muruca": "ng build Muruca --prod",
+    "build": "ng build Common --prod && ng build Muruca --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
