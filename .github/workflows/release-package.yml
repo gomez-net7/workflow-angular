@@ -20,7 +20,7 @@ jobs:
   #     - run: npm ci
   #     - run: npm test
   
-  publish-gpr:
+  publish-common:
     # needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -38,6 +38,25 @@ jobs:
       - run: npm ci
       - run: npm run build:common
       - run: npm publish dist/common
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  publish-muruca:
+    needs: publish-common
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v2
+      # Setup .npmrc file to publish to GitHub Packages
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: https://npm.pkg.github.com/
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@gomez-net7'
+      - run: npm ci
       - run: npm run build:muruca
       - run: npm publish dist/muruca
         env:
