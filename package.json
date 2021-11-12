@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm build:common && npm build:muruca",
+    "build": "npm run build:common && npm run build:muruca",
     "build:common": "ng build Common --prod",
     "build:muruca": "ng build Muruca --prod",
     "test": "ng test",
