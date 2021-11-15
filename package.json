@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build:common": "ng build Common --prod",
     "build:muruca": "ng build Muruca --prod",
-    "version": "node scripts/sync-version.js",
+    "version": "node scripts/sync-version.js && git add projects/*/package.json",
+    "postversion": "git push && git push --tags",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
