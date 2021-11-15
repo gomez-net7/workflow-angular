@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'muruca-Muruca',
   template: `
     <p>
-      muruca works!
+      muruca works version 0.0.21 o_X!
     </p>
   `,
   styles: [
