@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build": "npm run build:common && npm run build:muruca",
     "build:common": "ng build Common --prod",
     "build:muruca": "ng build Muruca --prod",
     "version": "node scripts/sync-version.js && git add projects/*/package.json",
