@@ -34,11 +34,11 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org/
           # Defaults to the user or organization that owns the workflow file
-          scope: '@gomez-net7'
+          # scope: '@gomez-net7'
       - run: npm ci
       - run: npm run build:common
       - run: npm publish dist/common --access public
-      - run: npm publish dist/muruca --access public
+      # - run: npm publish dist/muruca --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
