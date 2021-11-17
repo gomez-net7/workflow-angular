@@ -1,6 +1,6 @@
 {
   "name": "@gomez-net7/workflow-angular-muruca",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "peerDependencies": {
     "@angular/common": "^9.1.13",
     "@angular/core": "^9.1.13"
