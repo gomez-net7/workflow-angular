@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Common": {
+    "common": {
       "projectType": "library",
       "root": "projects/common",
       "sourceRoot": "projects/common/src",
@@ -43,7 +43,7 @@
         }
       }
     },
-    "Muruca": {
+    "muruca": {
       "projectType": "library",
       "root": "projects/muruca",
       "sourceRoot": "projects/muruca/src",
@@ -82,6 +82,46 @@
           }
         }
       }
+    },
+    "dataviz": {
+      "projectType": "library",
+      "root": "projects/dataviz",
+      "sourceRoot": "projects/dataviz/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dataviz/tsconfig.lib.json",
+            "project": "projects/dataviz/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/dataviz/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dataviz/src/test.ts",
+            "tsConfig": "projects/dataviz/tsconfig.spec.json",
+            "karmaConfig": "projects/dataviz/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dataviz/tsconfig.lib.json",
+              "projects/dataviz/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
-  "defaultProject": "CommonLib"
+  "defaultProject": "common"
 }

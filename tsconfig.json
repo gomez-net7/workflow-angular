@@ -23,6 +23,10 @@
       "muruca": [
         "dist/muruca/muruca",
         "dist/muruca"
+      ],
+      "dataviz": [
+        "dist/dataviz/dataviz",
+        "dist/dataviz"
       ]
     }
   },
