@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run build:common && npm run build:muruca",
-    "build:common": "ng build Common --prod",
-    "build:muruca": "ng build Muruca --prod",
+    "build": "npm run build:common && npm run build:muruca && npm run build:dataviz",
+    "build:common": "ng build common --prod",
+    "build:muruca": "ng build muruca --prod",
+    "build:dataviz": "ng build dataviz --prod",
     "preversion": "npm run build",
     "version": "node scripts/sync-version.js && git add projects/*/package.json",
     "postversion": "git push && git push --tags",
